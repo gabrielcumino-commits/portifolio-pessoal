@@ -1,0 +1,19 @@
+{
+  "meta": {
+    "title": "Gabriel Vianna Cumino | Software Engineering",
+    "description": "Portfolio of Gabriel Vianna Cumino, Software Engineering student at FIAP and full stack web developer."
+  },
+  "nav": {
+    "about": "About",
+    "projects": "Projects",
+    "skills": "Skills",
+    "experience": "Experience",
+    "education": "Education",
+    "achievements": "Achievements",
+    "contact": "Contact",
+    "menu": "Open menu"
+  },
+  "footer": {
+    "role": "Software Engineering student @ FIAP"
+  }
+}

@@ -8,9 +8,10 @@
   "description": "",
   "main": "index.js",
   "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+"scripts": {
+  "dev": "tailwindcss -i ./css/input.css -o ./css/output.css --watch",
+  "build": "tailwindcss -i ./css/input.css -o ./css/output.css --minify"
+},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/gabrielcumino-commits/portifolio-pessoal.git"

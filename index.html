@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gabriel Vianna Cumino | Engenharia de Software</title>
+  <meta name="description" content="">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/output.css">
+</head>
+
+<body class="bg-bg font-sans text-text antialiased">
+  <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded focus:bg-accent focus:px-3 focus:py-2 focus:text-bg">
+    Skip to content
+  </a>
+
+  <header class="fixed inset-x-0 top-0 z-40 border-b border-line/60 bg-bg/80 backdrop-blur">
+    <div class="mx-auto flex h-16 max-w-6xl items-center justify-between px-5">
+      <a href="#top" class="font-mono text-sm text-accent">gabriel<span class="text-muted">.cumino</span></a>
+
+      <nav id="menu" aria-label="Principal"
+           class="absolute inset-x-0 top-16 hidden border-b border-line/60 bg-bg px-5 py-4 lg:static lg:flex lg:border-0 lg:bg-transparent lg:p-0">
+        <ul class="flex flex-col gap-4 text-sm text-muted lg:flex-row lg:items-center lg:gap-7">
+          <li><a href="#about" data-i18n="nav.about" class="transition-colors hover:text-text">Sobre</a></li>
+          <li><a href="#projects" data-i18n="nav.projects" class="transition-colors hover:text-text">Projetos</a></li>
+          <li><a href="#skills" data-i18n="nav.skills" class="transition-colors hover:text-text">Skills</a></li>
+          <li><a href="#experience" data-i18n="nav.experience" class="transition-colors hover:text-text">Experiência</a></li>
+          <li><a href="#education" data-i18n="nav.education" class="transition-colors hover:text-text">Formação</a></li>
+          <li><a href="#achievements" data-i18n="nav.achievements" class="transition-colors hover:text-text">Conquistas</a></li>
+          <li><a href="#contact" data-i18n="nav.contact" class="transition-colors hover:text-text">Contato</a></li>
+        </ul>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <div class="flex items-center gap-1 font-mono text-xs" role="group" aria-label="Language">
+          <button data-lang-btn="pt" aria-pressed="true"
+                  class="rounded px-2 py-1 text-muted transition-colors hover:text-text aria-pressed:bg-surface aria-pressed:text-accent">PT</button>
+          <button data-lang-btn="en" aria-pressed="false"
+                  class="rounded px-2 py-1 text-muted transition-colors hover:text-text aria-pressed:bg-surface aria-pressed:text-accent">EN</button>
+        </div>
+
+        <button id="menu-btn" aria-expanded="false" aria-controls="menu" data-i18n-aria="nav.menu" aria-label="Abrir menu"
+                class="rounded p-2 text-muted hover:text-text lg:hidden">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+            <path d="M4 7h16M4 12h16M4 17h16"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- placeholders: cada seção será preenchida nas próximas etapas -->
+    <section id="top" class="mx-auto flex min-h-screen max-w-6xl scroll-mt-16 items-center px-5 pt-16">
+      <h1 class="text-4xl font-semibold">Gabriel Vianna Cumino</h1>
+    </section>
+    <section id="about" class="mx-auto min-h-[60vh] max-w-6xl scroll-mt-16 px-5 py-24"><h2 data-i18n="nav.about" class="text-2xl font-semibold">Sobre</h2></section>
+    <section id="projects" class="mx-auto min-h-[60vh] max-w-6xl scroll-mt-16 px-5 py-24"><h2 data-i18n="nav.projects" class="text-2xl font-semibold">Projetos</h2></section>
+    <section id="skills" class="mx-auto min-h-[60vh] max-w-6xl scroll-mt-16 px-5 py-24"><h2 data-i18n="nav.skills" class="text-2xl font-semibold">Skills</h2></section>
+    <section id="experience" class="mx-auto min-h-[60vh] max-w-6xl scroll-mt-16 px-5 py-24"><h2 data-i18n="nav.experience" class="text-2xl font-semibold">Experiência</h2></section>
+    <section id="education" class="mx-auto min-h-[60vh] max-w-6xl scroll-mt-16 px-5 py-24"><h2 data-i18n="nav.education" class="text-2xl font-semibold">Formação</h2></section>
+    <section id="achievements" class="mx-auto min-h-[60vh] max-w-6xl scroll-mt-16 px-5 py-24"><h2 data-i18n="nav.achievements" class="text-2xl font-semibold">Conquistas</h2></section>
+    <section id="contact" class="mx-auto min-h-[60vh] max-w-6xl scroll-mt-16 px-5 py-24"><h2 data-i18n="nav.contact" class="text-2xl font-semibold">Contato</h2></section>
+  </main>
+
+  <footer class="border-t border-line/60 py-8">
+    <div class="mx-auto max-w-6xl px-5 text-sm text-muted">
+      <p>© <span id="year"></span> Gabriel Vianna Cumino</p>
+      <p data-i18n="footer.role" class="font-mono text-xs">Estudante de Engenharia de Software @ FIAP</p>
+    </div>
+  </footer>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
